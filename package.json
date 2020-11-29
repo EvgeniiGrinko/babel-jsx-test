@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-clock": "npx babel jsx/clock.jsx -o js/clock.js -w",
-    "build": "npm run build-clock"},
+    "build-users": "npx babel jsx/users.jsx -o js/users.js -w",
+    "build-script": "npx babel jsx/script.jsx -o js/script.js -w",
+    "build": "npm run build-users & npm run build-script" },
   "author": "Grinko Evgenii",
   "license": "ISC",
   "babel": {
